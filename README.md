@@ -1,88 +1,87 @@
-# this is an updated version of:
-https://github.com/TigerAtGit/VDapp_MiniProject.git
-up to date (mars 2024)
-- latest tls of node !
-- this project will work in LOCAL envirement (using localhost) !
+# Election DApp - Decentralized Application for Election Management
 
-# it uses:
-- Truffle
-- Ganache
-- Metamask
-- Solidity
-- Web3 JS
-- React JS
+## Team Members
 
-# changes ?
-- "commented"-out any references to infura.
-- most uses of "img" has been left empty (src="") because those needs a database to store and call the images from.
-- some files arn't being used (probably only "serviceWorker.js").
-- updated the package.json dependencies.
-- updated react components and removed all deprecated code.
+**Ajaykumar Burigari** - 809320385 - Burigari@csu.fullerton.edu
 
-# my opinion:
-- the code work. youre welcome.
-- there is/was a file named 'yarn.lock' and i don't know what it's being used for...
-- the .env was holding this line 'SKIP_PREFLIGHT_CHECK=true', not sure if its necessary...
+**Harshini Madhurai** - 832473029 - harshinimadhurai@csu.fullerton.edu
 
-# commands used in this project:
-```
+**Bhargava Sriram Medharametla** - 816283923 - mbahrgavasriram@csu.fullerton.edu
+
+**Jayanth Vallabi** - 884435876 - jayanthvallabi@csu.fullerton.edu
+
+## Project Overview
+
+The Election DApp is a decentralized application built on the Ethereum blockchain with a React JS client-side interface. It is designed to facilitate secure, transparent, and decentralized election processes. The application is ideal for election officials and voters, ensuring a seamless and trustworthy voting experience.
+
+## Features
+
+**For Election Officials**
+
+	•	Voter Verification: Verify eligible voters.
+	•	Candidate Management: Add the list of candidates standing for election.
+	•	Voting Phase Control: Start or end the voting period.
+	•	Result Management: View and display election results.
+
+**For Voters**
+
+	•	Registration: Register for participation in the election.
+	•	Candidate List: View the list of candidates.
+	•	Voting: Cast a vote securely.
+
+## Technologies Used
+
+	•	Smart Contracts: Developed using Solidity.
+	•	Blockchain Platform: Deployed on the Ethereum blockchain using Truffle.
+	•	Development Tools:
+	•	Ganache: For local blockchain testing.
+	•	Metamask: As a browser extension for wallet and Ethereum interaction.
+	•	Frontend: Built using React JS.
+	•	Web3 JS: For blockchain interaction on the client side.
+
+## Commands Used in the Project
+
+# Install Truffle globally
 npm i truffle -g
-cd .\client\
+
+# Navigate to the client directory and install dependencies
+cd ./client
 npm i
+
+# Return to the root directory, compile and deploy contracts
 cd ..
 truffle compile
 truffle migrate
-cd .\client\
+
+# Start the React client application
+cd ./client
 npm run start
-```
 
-# apps that needs installation:
-- ganache
-- metamask (i used the extension)
+**Applications Needed**
 
-# guide ?
-- in vscode, the extension "Truffle for VS Code v2.7.1" isn't going to work properly because it isn't up to date with node.js and npm. installing may help, just don't depend on it.
-- used solc version "0.8.19" because anything later gave errors.
-- ganache needs to be open and the project selected (ganache will look for 'truffle-config.js').
-- add the ganache network inside metamask so the accounts that are going to be used when imported, will show 100eth each.
-- the address for an admin is written inside the .sol file, so make sure it is changed to whatever address you're going to choose from ganache.
-- the code is probably not "secure" enough.
-- if you're going to install ganache from npm, make sure to install ganache and not ganache-cli(it's outdated).
+	1.	Ganache: For local Ethereum blockchain testing.
+	2.	Metamask: Browser extension for Ethereum wallet management.
+
+**How It Works**
+
+	1.	Election Officials:
+	•	Verify voters and manage candidates.
+	•	Start and stop the voting phase as needed.
+	•	View results after the election concludes.
+	2.	Voters:
+	•	Register with their credentials.
+	•	Review the candidate list.
+	•	Cast their vote securely during the voting phase.
+
+## Setup Guide
+
+	1.	Install Ganache and set up a local Ethereum blockchain.
+	2.	Add the Metamask extension to your browser and configure it to connect to the local blockchain.
+	3.	Clone the project repository and navigate to the root directory.
+	4.	Use the provided commands to install dependencies, compile smart contracts, deploy them, and run the client application.
+
+This DApp ensures transparency and trust by leveraging blockchain technology, making it a robust solution for modern election systems.
 
 
 
-
-
-
-### old README:
-
-# VDapp (Decentralised Application for Voting)
-It is an E-voting system using Blockchain. 
-
-## Demo
-https://user-images.githubusercontent.com/77017010/170699771-7d6a0109-a8f1-4db8-b122-0ae713db2596.mp4
-
-## Need of Blockchain
-Using blockchain, voting process can be made more secure, transparent, immutable, and reliable. A blockchain-based voting application does not concern itself with the security of its Internet connection, because any hacker with access to the terminal will not be able to affect other nodes. Voters can effectively submit their vote without revealing their identity or political preferences to the public. Officials can count votes with absolute certainty, knowing that each ID can be attributed to one vote, no fakes can be created, and that tampering is impossible.
-
-## What we have developed?
-A Decentralized Application (Dapp) running on the Ethereum blockchain and client side as a React JS application.
-All the contract code is written in solidity language which is used to deploy contract in blockchain platform.
-This application can be used by Election Commission (officials responsible for conducting Elections) as well as Voters. 
-- The officials can control the election process by
-  - Verifying the eligible voters
-  - Adding the list of candidates that are standing for the election
-  - Start or End voting phase (time during which the voters can cast their vote)
-  - See or display the results of election.
-- The voters can participate in the election process by
-  - Registering themselves for the voting
-  - Viewing the list of candidates
-  - Casting their vote
-
-### What we have used?
-- Truffle
-- Ganache
-- Metamask
-- Solidity
-- Web3 JS
-- React JS
+## GitHub Link to the DApp: https://github.com/ajay094-dev/Election-DApp---Decentralized-Application-for-Election-Management.git
